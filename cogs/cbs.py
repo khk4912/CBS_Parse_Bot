@@ -20,7 +20,9 @@ class CBS(commands.Cog):
             async with session.get(self.CBSList) as r:
                 data = await r.json()
         embed = discord.Embed(
-            title="📢 재난문자", description="최근 발송된 3개의 재난문자를 보여줘요.", color=0xE71212
+            title="📢 재난문자",
+            description="최근 발송된 3개의 재난문자를 보여줘요.",
+            color=0xE71212
         )
         for i in data[:3]:
             embed.add_field(name=i["SJ"], value=i["CONT"], inline=False)

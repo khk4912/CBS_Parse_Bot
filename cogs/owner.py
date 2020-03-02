@@ -15,7 +15,9 @@ class Owner(commands.Cog):
     async def cog_check(self, ctx):
         if not ctx.author.id in CONF.OWNERS:
             embed = discord.Embed(
-                title="⚠ 주의", description="관리자만 사용이 가능한 명령어에요!", color=0xD8EF56
+                title="⚠ 주의",
+                description="관리자만 사용이 가능한 명령어에요!",
+                color=0xD8EF56
             )
             await ctx.send(embed=embed)
             return False
