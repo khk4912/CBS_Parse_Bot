@@ -1,0 +1,1 @@
+[사용하기](https://discord.gg/p6zb9Wk)
